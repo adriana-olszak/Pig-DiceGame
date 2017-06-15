@@ -1,0 +1,111 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  background-color: #1C1A1D; }
+
+.pig-game-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 80vw;
+  height: 348px; }
+  .pig-game-board__panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    background-color: #FCFCFE;
+    color: #1c54e9; }
+  .pig-game-board .pig-game-board__panel--active {
+    border: 2px solid #1c54e9; }
+    .pig-game-board .pig-game-board__panel--active .pig-game-board__player-name:after {
+      content: '';
+      display: flex;
+      width: 8px;
+      height: 8px;
+      margin-left: 5px;
+      border: 2px solid #FFC602;
+      border-radius: 6px; }
+    .pig-game-board .pig-game-board__panel--active .pig-game-board__player-current {
+      background-color: #ffc602;
+      border-radius: 5px;
+      width: 90%; }
+  .pig-game-board__player-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7px;
+    color: #727272; }
+  .pig-game-board__player-score {
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 400; }
+  .pig-game-board__player-current {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 19px 46px;
+    border-radius: 5px; }
+  .pig-game-board .current__label {
+    color: #000; }
+  .pig-game-board__controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 10px; }
+  .pig-game-board__dice {
+    max-width: 144px;
+    border-radius: 5px; }
+  .pig-game-board button {
+    width: 100%;
+    padding: 19px 19px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px; }
+    .pig-game-board button i {
+      display: inline-block;
+      padding-right: 6px; }
+  .pig-game-board .btn-new {
+    background-color: #1C54E9;
+    color: #FBFDFE; }
+    .pig-game-board .btn-new i {
+      transition: 300ms ease-in-out; }
+    .pig-game-board .btn-new:hover i {
+      transform: translateX(-2px); }
+  .pig-game-board .btn-roll {
+    background-color: #ffc602; }
+    .pig-game-board .btn-roll i {
+      transition: 300ms ease-in-out; }
+    .pig-game-board .btn-roll:hover i {
+      transform: rotate(360deg); }
+  .pig-game-board .btn-hold {
+    background-color: #666; }
+    .pig-game-board .btn-hold i {
+      transition: 300ms ease-in-out; }
+    .pig-game-board .btn-hold:hover i {
+      transform: translateY(2px); }
+
+.not-visible {
+  visibility: hidden; }
+
+/*# sourceMappingURL=main.css.map */

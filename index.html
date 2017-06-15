@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pig Game</title>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="pig-game-board">
+    <div class="pig-game-board__panel pig-game-board__panel--active">
+        <div id="name-0" class="pig-game-board__player-name">Player 1</div>
+        <div id="score-0" class="pig-game-board__player-score">43</div>
+        <div class="pig-game-board__player-current">
+            <div class="current__label">Current</div>
+            <div id="current-0" class="current__score">11</div>
+        </div>
+    </div>
+    <div class="pig-game-board__controls">
+        <button id="newGame" class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+        <img id="dice" src="dice-5.png" alt="Dice" class="pig-game-board__dice">
+        <button id="rollDice" class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+        <button id="holdGame" class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+    </div>
+    <div class="pig-game-board__panel">
+        <div id="name-1" class="pig-game-board__player-name">Player 2</div>
+        <div id="score-1" class="pig-game-board__player-score">72</div>
+        <div class="pig-game-board__player-current">
+            <div class="current__label">Current</div>
+            <div id="current-1" class="current__score">0</div>
+        </div>
+    </div>
+    <div class="pig-game-info"></div>
+</div><!--pig-game-board-->
+
+
+<script src="app.js"></script>
+</body>
+</html>
